@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tiny game arcade</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nonogram.css">
+    </head>
+    <body>
+        <header>
+            <div id="menu">
+                <a href="index.html">home</a>
+                </br>
+                </br>
+                <div class="games">
+                    <button class="dropbtn">games</button>
+                    <div class="dropdown-content">
+                        <a href="nonogram.html">nonogram</a>
+                        <a href="tictactoe.html">tictactoe</a>
+                        <a href="coin.html">coin flip</a>
+                        <a href="dice.html">dice</a>
+                        <a href="rps.html">rock paper scissors</a>
+                    </div>
+                </div>
+              </div>
+            <h1 id = "title">nonogram</h1>  
+        </header>
+        <div class="gameContainer">
+            <div>
+                <table id="game"></table>
+            </div>
+              
+            <div id="settings">
+                <label>Height <input id="set-h" type="number" min="5" max="30" value="15"></input></label>
+                </br>
+                <label>Width <input id="set-w" type="number" min="5" max="30" value="15"></input></label>
+                </br>
+                <button id="new-game">New game</button>
+                <button id="solution">Solution</button>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>&copy 2024 Stephanie Hsia ECS162</p>
+        </footer>
+        <script src="nonogram.js"></script>
+    </body>

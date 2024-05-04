@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tiny game arcade</title>
+        <link rel = "stylesheet" href = "style.css" >
+        <link rel = "stylesheet" href = "dice.css">
+    </head>
+    <body>
+        <header>
+            <div id="menu">
+                <a href="index.html">home</a>
+                </br>
+                </br>
+                <div class="games">
+                    <button class="dropbtn">games</button>
+                    <div class="dropdown-content">
+                        <a href="nonogram.html">nonogram</a>
+                        <a href="tictactoe.html">tictactoe</a>
+                        <a href="coin.html">coin flip</a>
+                        <a href="dice.html">dice</a>
+                        <a href="rps.html">rock paper scissors</a>
+                    </div>
+                </div>
+              </div>
+            <h1 id = "title">roll a dice</h1>  
+        </header>
+        <div id="container">
+            <label>How many sides? <input id="sides" type="number" min="1" max="100" value="6"></input></label>
+            <button id ="button">click me to roll dice!</button>
+            <p id ="output">
+                You got: <span id="result"></span>
+            </p>
+        </div>
+        <footer id="footer">
+            <p>&copy 2024 Stephanie Hsia ECS162</p>
+        </footer>
+        <script src = "dice.js"></script>
+    </body>
